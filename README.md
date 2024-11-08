@@ -7,6 +7,7 @@ Eine Bewerbungsformular im Design einer Unternehmens-Website, erstellt mit HTML,
 - Upload Möglichkeit für Dateien und ein Bewerbungsfoto inkl. Vorschau
 - Responsives Design
 - E-Mail Bestätigung
+- Erfolgs- und Fehlermeldungen werden dynamisch ausgegeben
 
 ## Installation
 1. Repository klonen: `git clone https://github.com/AndreasLesovsky/innovate-works-website.git`
