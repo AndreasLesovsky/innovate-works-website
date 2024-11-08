@@ -9,7 +9,7 @@ $msg = '';
 $errors = [];
 
 // reCAPTCHA-Schlüssel
-$recaptchaSecret = '6Lfi0HAqAAAAAISQWKJO-6xwclIK4pmkk4TAA9mu'; 
+$recaptchaSecret = ''; 
 
 if (count($_POST) > 0) {
     // reCAPTCHA-Überprüfung
@@ -82,16 +82,16 @@ if (count($_POST) > 0) {
             try {
                 // Server-Einstellungen
                 $mail->isSMTP();
-                $mail->Host = 'webmail.your-server.de'; // SMTP-Server
+                $mail->Host = ''; // SMTP-Server
                 $mail->SMTPAuth = true;
-                $mail->Username = 'innovate-works@andreas-lesovsky-web.dev'; // SMTP-Benutzername
-                $mail->Password = 'eM2k54wh7eyJ167b'; // SMTP-Passwort
+                $mail->Username = ''; // SMTP-Benutzername
+                $mail->Password = ''; // SMTP-Passwort
                 $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
                 $mail->Port = 587;
 				$mail->CharSet = 'UTF-8';
 
                 // Absender und Empfänger
-                $mail->setFrom('innovate-works@andreas-lesovsky-web.dev', 'Innovate Works');
+                $mail->setFrom('', 'Innovate Works');
                 $mail->addAddress($userDaten['email'], htmlspecialchars($userDaten['name']));
 
                 // Inhalt der E-Mail
@@ -375,7 +375,7 @@ if (count($_POST) > 0) {
 					<input type="checkbox" name="AGB" value="akzeptiert" required>
 					Ich habe die <a href="#">Datenschutzbestimmungen</a> gelesen und akzeptiere sie.*
 				</label>
-				<div class="g-recaptcha" data-sitekey="6Lfi0HAqAAAAALuOLXWRAR0mB6hvzgTafvIY5out"></div>
+				<div class="g-recaptcha" data-sitekey=""></div>
 				<input type="submit" value="Bewerben" class="hvr-push">
 				<p>Mit dem Absenden Ihrer Bewerbung bestätigen Sie die Richtigkeit Ihrer Angaben.</p>
 			</fieldset>
