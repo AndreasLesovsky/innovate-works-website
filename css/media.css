@@ -1,0 +1,198 @@
+/* ---- Media Queries ---- */
+
+/* >80rem XL */
+
+@media screen and (min-width:calc(80rem + 0.1px)) {
+    .banner {
+        background-image: url(../media/austin-distel-wD1LRb9OeEo-unsplash_cropped.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top left;
+        height: 60vh;
+    }
+}
+
+/* >80rem XL Ende */
+
+
+
+/* max 80rem LG */
+
+@media screen and (max-width:80rem) {
+    .banner {
+        background-image: url(../media/austin-distel-wD1LRb9OeEo-unsplash_cropped.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top left;
+        height: 60vh;
+    }
+    button#menu-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+        border: 2px solid var(--col-main);
+        width: 3rem;
+        height: 3rem;
+        background-color: var(--col-bg);
+        cursor: pointer;
+    }
+    nav {
+        
+        display: block;
+        position: absolute;
+        z-index: 50;
+        left: 0;
+        top: -30rem;
+        width: 100%;
+        transition: top 1s;
+        padding: 0rem 1rem 1rem 1rem;
+        background-color: var(--col-bg);
+    }
+    nav ul {
+        display: block;
+        width: initial;
+    }
+    nav a {
+        justify-content: center;
+    }
+    nav ul ul {
+        padding: 1rem;
+        width: 100%;
+        text-align: center;
+    }
+    nav li {
+        padding: 0.25rem 0;
+    }
+    nav ul ul li:last-of-type {
+        padding-bottom: 0.25rem;
+    }
+    nav form {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0;
+    }
+    nav .search {
+        width: 100%;
+    }
+	nav select {
+		width: 100%;
+		margin-top: 0.5rem;
+        text-align: center;
+	}
+    nav input[type="search"] {
+        text-align: center;
+    }
+    nav li:hover > ul {
+        display:none;
+    }
+    nav ul ul.menu-ul-ul-visible {
+        display:block;
+        z-index: 50;
+    }
+}
+
+/* max 80rem LG Ende */
+
+
+
+/* max 64rem MD */
+
+@media screen and (max-width:64rem) {
+    .banner {
+        background-image: url(../media/1920x0/austin-distel-wD1LRb9OeEo-unsplash_cropped.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top left;
+        height: 50vh;
+    }
+    
+	
+    main {
+        padding: 1rem 3rem;
+    }
+    footer .inner-container {
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas: 
+            "contact1"
+            "contact2"
+            "info"
+            "social"
+            "copyright";
+            gap: 1.5rem;
+    }
+    
+}
+
+/* max 64rem MD Ende */
+
+
+
+/* max 48rem SM */
+
+@media screen and (max-width:48rem) {
+    main {
+        padding: 1rem 5rem;
+    }
+}
+
+/* max 48rem SM Ende*/
+
+
+
+/* max 36rem XS */
+@media screen and (max-width:36rem) {
+    header div.inner-container {
+        padding-inline: 1.5rem 2rem;
+    }
+    header div.inner-container > a svg {
+        transform: scale(0.75);
+    }
+    .banner {
+        height: 33vh;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    legend {
+        font-size: 1.25rem;
+    }
+    main {
+        padding: 2rem;
+    }
+    footer div a img {
+        max-width: 12rem;
+    }
+    
+}
+
+/* Mobile max 36rem XS Ende */
+
+
+/* max 25rem XXS */
+
+@media screen and (max-width:25rem) {
+    /* h1 span {
+        display: inline;
+    } */
+    header .inner-container a img:first-of-type,
+    header .inner-container a img:last-of-type {
+        width: 8rem;
+    }
+    i {
+        font-size: 1.5rem;
+    }
+    
+}
+
+/* max 25rem XXS Ende */
+
+/* Mozilla Firefox */
+@-moz-document url-prefix() {}
+
+/* Google Chrome und andere Webkit-basierte Browser */
+@media screen and (-webkit-min-device-pixel-ratio:0) {}
+
+/* ---- Media Queries Ende ---- */

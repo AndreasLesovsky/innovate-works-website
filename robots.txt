@@ -1,0 +1,3 @@
+User-agent: *
+
+Sitemap: https://innovate-works.andreas-lesovsky-web-projekte.at/sitemap.xml

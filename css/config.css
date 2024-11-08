@@ -1,0 +1,40 @@
+:root {
+    /* ---- Farben ---- */
+    
+    --col-font: #333;
+    --col-font-inverted: #e1e1e1;
+    --col-main: #005387;
+    --col-bg: #f2f2f2;
+    --col-buttons: #005387;
+    --col-buttons-hover: #0076bf;
+    --col-shadow: #1f1f1f;
+
+    /* ---- ENDE Farben ---- */
+
+
+    /* ---- Schriften ---- */
+    --font-std: 'Poppins', Arial, sans-serif;
+    /* ---- ENDE Schriften ---- */
+}
+header div a img:last-of-type {
+    display: none;
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --col-font: #e1e1e1;
+        --col-font-inverted: #333;
+        --col-main: #0076bf;
+        --col-bg: #222222;
+        --col-buttons: #0076bf;
+        --col-buttons-hover: #005387;
+        --col-shadow: rgba(255, 255, 255, 0.2);
+    }
+
+    header div a img:first-of-type {
+        display: none;
+    }
+    header div a img:last-of-type {
+        display: block;
+    }
+    
+}

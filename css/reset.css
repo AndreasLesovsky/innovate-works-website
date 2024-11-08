@@ -1,0 +1,84 @@
+/* ---- Reset ---- */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	position: relative;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	text-wrap: balance;
+	font-weight: normal;
+}
+
+ul,
+ol,
+dl,
+menu,
+summary {
+	margin-left: 0;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+input,
+button,
+textarea,
+select {
+	color: var(--col-font);
+	background: none;
+	border: 2px solid var(--col-font);
+	font: inherit;
+}
+input[type="file"] {
+	border: none;
+}
+
+fieldset {
+	border: none;
+}
+main input:focus,
+main button:focus,
+main textarea:focus,
+main select:focus {
+	border: 2px solid var(--col-main);
+	outline-offset: 2px;
+	outline: 1px solid var(--col-main);
+}
+
+#menu-btn {
+	outline: none;
+}
+
+video {
+	height: auto;
+	max-width: 100%;
+}
+
+iframe {
+	border: 0;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+td,
+th {
+	padding: 0;
+}
+
+address {
+	font-style: normal;
+}
+
+/* ---- ENDE Reset ---- */

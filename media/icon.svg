@@ -1,0 +1,17 @@
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    :root {
+        --col-main: #005387;
+        --col-bg: #f2f2f2;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --col-main: #0076bf;
+          --col-bg: #222222;
+        }
+      }
+  </style>
+  <polygon points="100,10 180,100 100,190 20,100" fill="var(--col-main)" transform="rotate(70, 100, 100)" />
+  <polygon points="100,20 150,100 100,180 50,100" fill="var(--col-bg)" transform="rotate(70, 100, 100)" />
+</svg>
